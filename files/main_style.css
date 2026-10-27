@@ -351,3 +351,13 @@ body.nav-open .unite-header .hamburger span:after { top: -1px; -webkit-transform
 .mobile-nav li.has-submenu > span.icon-caret:before { position: relative; display: block; color: #000000; font-size: 24px; content: '\203A'; -webkit-transform: rotate(90deg); transform: rotate(90deg); }
 .mobile-nav li.has-submenu .wsite-menu-wrap.open { max-height: 1000px; }
 .mobile-nav li.wsite-nav-more { display: none !important; }
+
+/* === Desktop (>1024px): big, full-screen, vertically + horizontally centered menu === */
+@media screen and (min-width: 1025px) {
+  body.nav-open .mobile-nav { display: flex !important; flex-direction: column; align-items: center; justify-content: center; padding: 0 !important; }
+  .mobile-nav .wsite-menu-default { width: 100%; margin: 0; }
+  .mobile-nav li > a.wsite-menu-item { font-size: 44px !important; padding: 16px 0 !important; line-height: 1.1; }
+  .mobile-nav li > a.wsite-menu-subitem { font-size: 24px !important; padding: 10px 0 !important; }
+  .mobile-nav li.has-submenu > span.icon-caret { top: 50%; right: 48px; width: auto; height: auto; padding: 0; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+  .mobile-nav li.has-submenu > span.icon-caret:before { font-size: 40px; }
+}
