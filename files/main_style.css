@@ -361,3 +361,9 @@ body.nav-open .unite-header .hamburger span:after { top: -1px; -webkit-transform
   .mobile-nav li.has-submenu > span.icon-caret { top: 50%; right: 48px; width: auto; height: auto; padding: 0; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
   .mobile-nav li.has-submenu > span.icon-caret:before { font-size: 40px; }
 }
+
+/* === Blog page: give content the same side gutter as other pages === */
+.wsite-page-blog .main-wrap > .wsite-elements.wsite-not-footer { max-width: 1366px; margin: 0 auto; padding: 60px 40px; box-sizing: border-box; }
+@media screen and (max-width: 1024px) {
+  .wsite-page-blog .main-wrap > .wsite-elements.wsite-not-footer { padding: 30px 20px; }
+}
